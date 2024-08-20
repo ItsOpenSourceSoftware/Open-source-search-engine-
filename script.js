@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsContainer = document.getElementById('results');
     const searchQueryInput = document.getElementById('search-query');
 
-    // Extended data array with the new entry
+    // Extended data array with the new entries
     const data = [
         {
             title: 'Google',
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'ChatGPT',
-            url: 'https://chat.openai.com',
+            url: 'https://chatgpt.com',
             description: 'Conversational AI that understands and generates human-like responses.'
         },
         {
@@ -102,11 +102,36 @@ document.addEventListener('DOMContentLoaded', () => {
             url: 'https://fedoraproject.org',
             description: 'The official website for the Fedora Project, which produces the Fedora Linux operating system.'
         },
-        // Added new search result
         {
             title: 'Google Chrome',
             url: 'https://www.google.com/chrome',
             description: 'Official site for Google Chrome, a fast, secure, and free web browser developed by Google.'
+        },
+        {
+            title: 'Microsoft Teams',
+            url: 'https://www.microsoft.com/en-au/microsoft-teams',
+            description: 'Official site for Microsoft Teams, a collaboration platform that integrates with Microsoft 365 for chat, meetings, and file sharing.'
+        },
+        {
+            title: 'Zoom',
+            url: 'https://zoom.us',
+            description: 'Official site for Zoom, a video conferencing platform that offers online meetings, webinars, and collaboration tools.'
+        },
+        {
+            title: 'Windows',
+            url: 'https://www.microsoft.com/windows',
+            description: 'Official site for Windows, the operating system developed by Microsoft.'
+        },
+        {
+            title: 'Firefox',
+            url: 'https://www.mozilla.org/firefox',
+            description: 'Official site for Mozilla Firefox, a free and open-source web browser known for its speed and privacy features.'
+        },
+        // Added new search result
+        {
+            title: 'PortForward',
+            url: 'https://www.portforward.com',
+            description: 'Website providing guides and tools for setting up port forwarding on various routers and networks.'
         }
     ];
 
