@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'A collaborative platform providing how-to guides on a wide range of topics.'
         },
         {
-            title: 'Twitter',
+            title: 'X',
             url: 'https://twitter.com',
             description: 'Social media platform for short, real-time updates and interactions.'
         },
