@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Free online encyclopedia with millions of articles in multiple languages.'
         },
         {
+            title: 'WikiHow',
+            url: 'https://www.wikihow.com',
+            description: 'A collaborative platform providing how-to guides on a wide range of topics.'
+        },
+        {
             title: 'Twitter',
             url: 'https://twitter.com',
             description: 'Social media platform for short, real-time updates and interactions.'
@@ -108,6 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Official site for Google Chrome, a fast, secure, and free web browser developed by Google.'
         },
         {
+            title: 'Chrome Web Store',
+            url: 'https://chrome.google.com/webstore',
+            description: 'Official store for Chrome extensions, themes, and apps for the Google Chrome browser.'
+        },
+        {
             title: 'Microsoft Teams',
             url: 'https://www.microsoft.com/en-au/microsoft-teams',
             description: 'Official site for Microsoft Teams, a collaboration platform that integrates with Microsoft 365 for chat, meetings, and file sharing.'
@@ -127,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
             url: 'https://www.mozilla.org/firefox',
             description: 'Official site for Mozilla Firefox, a free and open-source web browser known for its speed and privacy features.'
         },
-        // Added new search results
         {
             title: 'PortForward',
             url: 'https://www.portforward.com',
@@ -197,6 +206,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Minecraft',
             url: 'https://www.minecraft.net',
             description: 'Official site for Minecraft, a popular sandbox video game that allows players to build and explore virtual worlds.'
+        },
+        {
+            title: 'Strandhatters',
+            url: 'https://strandhatters.com.au',
+            description: 'A premier destination for high-quality hats and headwear in Australia.'
+        },
+        {
+            title: 'BitView',
+            url: 'https://bitview.net',
+            description: 'A free and open-source video hosting platform where users can upload and share videos.'
+        },
+        {
+            title: 'eBay',
+            url: 'https://www.ebay.com',
+            description: 'Online auction and shopping website where people buy and sell a wide variety of goods and services worldwide.'
+        },
+        {
+            title: 'WikiHow',
+            url: 'https://www.wikihow.com',
+            description: 'A collaborative platform providing how-to guides on a wide range of topics.'
+        },
+        {
+            title: 'Cobalt.tools',
+            url: 'https://cobalt.tools',
+            description: 'A video downloader tool that allows users to download videos from various online platforms.'
         }
     ];
 
@@ -215,16 +249,14 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         
-        results.forEach(result => {
+        results.forEach(item => {
             const resultItem = document.createElement('div');
             resultItem.classList.add('result-item');
-
             resultItem.innerHTML = `
-                <a href="${result.url}" target="_blank" class="result-title">${result.title}</a>
-                <p class="result-url">${result.url}</p>
-                <p class="result-description">${result.description}</p>
+                <a class="result-title" href="${item.url}" target="_blank">${item.title}</a>
+                <div class="result-url">${item.url}</div>
+                <div class="result-description">${item.description}</div>
             `;
-            
             resultsContainer.appendChild(resultItem);
         });
     }
