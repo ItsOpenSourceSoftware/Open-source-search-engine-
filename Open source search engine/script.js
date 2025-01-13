@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('search-form');
     const resultsContainer = document.getElementById('results');
@@ -197,6 +195,16 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Minecraft',
             url: 'https://www.minecraft.net',
             description: 'Official site for Minecraft, a popular sandbox video game that allows players to build and explore virtual worlds.'
+        },
+        {
+            title: 'Ubuntu',
+            url: 'https://www.ubuntu.com',
+            description: 'Official site for Ubuntu, a popular open-source Linux operating system.'
+        },
+        {
+            title: 'Samsung',
+            url: 'https://www.samsung.com',
+            description: 'Official site for Samsung, a global leader in technology and consumer electronics.'
         }
     ];
 
